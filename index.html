@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pitzik4's Ludum Dare games</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans" />
+    <style type="text/css">
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 1em;
+        text-align: center;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 1.5;
+      }
+      #content {
+        display: inline-block;
+        text-align: left;
+        width: 40%;
+        min-width: 700px;
+        
+        background-color: white;
+        color: black;
+        margin: 0;
+        padding: 2em;
+        border-radius: 1em;
+      }
+      #content > :first-child {
+        margin-top: 0;
+      }
+      #content > :last-child {
+        margin-bottom: 0;
+      }
+      
+      @media (max-width: 800px) {
+        #content {
+          position: absolute;
+          left: 0; right: 0;
+          top: 0; bottom: 0;
+          width: auto;
+          min-width: auto;
+          border-radius: 0;
+        }
+      }
+      
+      h1 {
+        font-size: 1.25em;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+      a {
+        color: #36b;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #769;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ol {
+        list-style-type: disc;
+      }
+      li {
+        margin: 1em 0;
+      }
+      .game-name {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Pitzik4's Ludum Dare games</h1>
+      <p>
+        <a href="http://ludumdare.com/compo/">Ludum Dare</a> is a thrice-yearly jam during which people from around the world make games in either 48 or 72 hours, at their option. These games are then judged by fellow entrants in a number of categories. Your prize is your product, but many consider the ratings they receive a valuable form of feedback on their growth and their current strengths and weaknesses.
+      </p>
+      <p>
+        <a href="http://ludumdare.com/compo/author/pitzik4/">I've participated 13 times under the name of Pitzik4.</a> I began participating when I was 13 years old. It was a very difficult time in my life when I needed a sense of direction, and to know that I could make my dreams realities and that people would appreciate them.
+      </p>
+      <p>
+        I didn't get the hang of it the first time, or the second, or the third. But Ludum Dare inspired in me an attitude that said... "Tomorrow, you'll look back at the mistakes you made today, and you'll see the path you took to get from there to where you are now. And you'll be glad you did what you did, because if you hadn't, you would never have known that there was another way."
+      </p>
+      <p>
+        Over the years, Ludum Dare drove me to grow so much as a game developer, as a programmer, as an artist, and as a person. I don't think I need it anymore, not that that will stop me from participating in the future. But I still have a long way to go, and the lessons I learned from it continue to drive me forward. To improve myself. To know my limits, and to embrace them and use them to express myself, because they're a part of who I am.
+      </p>
+      <p>
+        Schmaltz aside, <strong>you're probably just here to play some games. Before we get to those, there are some things you should know.</strong> The versions available here are HTML/JS ports of the originals; I originally used Java for LD23--LD25, then Flash for LD26--LD31 (except for LD30, which was, uh, a weird one). I used HTML/JS from LD32 onwards, but my LD34 game had an incredibly sketchy graphics engine and will also require a port.
+      </p>
+      <p>
+        I've tried to make these ports as faithful to the originals as possible, bug-for-bug. To make this possible, and to significantly lessen the difficulty of the porting process, I transpiled the original code rather than writing the new JavaScript myself. Each game required a lot of rejiggering to run, and some required a chainsaw to run fast because I didn't know what optimization was when I was 13. There are a few extremely minor discrepancies, but I don't see them as anything important. If you find a bug, just assume it was also present in the original.
+      </p>
+      <p>
+        I haven't finished porting every game yet. I kind of ran out of steam when I realized I was going to have to completely rethink the way Meddle's stupid crazy Matrix-esque display mode was implemented. I'll get around to it some day.
+      </p>
+      <p>
+        All right, that's all. Now without further ado...
+      </p>
+      <h2>The games</h2>
+      <ol>
+        <li><a href="ld23/"><span class="game-name">Earth Evacuation</span> (LD23, 48h)</a>: An incredibly confusing resource management game with no audio.</li>
+        <li><a href="ld24/"><span class="game-name">Genocide</span> (LD24, 72h)</a>: An unfortunately named survival platformer.</li>
+        <li><a href="ld25/"><span class="game-name">Prophecy of the Villain</span> (LD25, 72h)</a>: An unfinished top-down RPG that does its best to lampoon stuff.</li>
+        <li><a href="ld26/"><span class="game-name">D.RE.U</span> (LD26, 48h)</a>: A self-loathing puzzle platformer with an interesting mechanic.</li>
+        <li><a href="ld27/"><span class="game-name">Jackton Factory</span> (LD27, 72h)</a>: A lightning-fast point-and-click adventure game with an even more interesting mechanic.</li>
+        <li><a href="ld28/"><span class="game-name">Wiped</span> (LD28, 48h)</a>: A severely half-baked story-centric platformer.</li>
+      </ol>
+      <p>
+        (...Uh, I'm allowed to use GitHub Pages like this, right? I didn't find any sources that said I wasn't...)
+      </p>
+    </div>
+    <script src="smartquotes.js"></script>
+  </body>
+</html>
