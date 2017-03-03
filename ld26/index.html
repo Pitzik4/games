@@ -25,12 +25,12 @@
 	<style>
 		html,body { overflow: hidden; background: black; }
 		#openfl-content { margin: 0 auto; width: 640px; height: 480px; }
-    canvas {
-      transform: none !important;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: pixelated;
-      -ms-interpolation-mode: nearest-neighbor;
-    }
+		canvas {
+			transform: none !important;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: pixelated;
+			-ms-interpolation-mode: nearest-neighbor;
+		}
 		
 		@font-face {
 			font-family: 'Nokia Cellphone FC Small';
@@ -49,6 +49,12 @@
 			url('flixel/fonts/monsterrat.ttf') format('truetype');
 			font-weight: normal;
 			font-style: normal;
+		}
+		
+		@media (max-height: 500px) {
+			html, body {
+				margin: 0;
+			}
 		}
 	</style>
 	
