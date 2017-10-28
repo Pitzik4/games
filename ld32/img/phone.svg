@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="450" width="260" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 68.791665 119.0625">
+<g transform="translate(0 -177.9)">
+<g transform="matrix(.75 0 0 .75 -.9071 73.31)">
+<path d="m9.449 204.8-18.9 35.15-2.646 53.29 25.7-16.63z" fill-rule="evenodd" fill="#eadaaa"/>
+<g transform="matrix(.9697 0 0 .9697 .1970 7.855)">
+<rect rx="4.233" height="145.5" width="72.76" y="144.9" x="6.501" fill="#5d5f6a"/>
+<path d="m28.06 286.7c-5.008-4.019-10.94-3.181-17.37 0.2673l3.742-6.014-0.1336 2.539c6.646-3.841 10.64-0.6894 13.76 3.207z" fill-rule="evenodd" fill="#fff"/>
+<rect ry="2.472" height="4.944" width="19.78" y="282" x="33.41" fill="#262626"/>
+</g>
+</g>
+</g>
+</svg>

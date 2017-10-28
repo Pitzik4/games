@@ -1,0 +1,248 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+* {
+  font-family: Tahoma, Geneva, sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+#game {
+  background-color: #888;
+  background-image: url('img/control-panel.svg');
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1000px;
+  height: 600px;
+}
+.phonec {
+  position: absolute;
+  bottom: 0px;
+  width: 260px;
+  height: 450px;
+}
+#a .phonec {
+  left: 0px;
+}
+#b .phonec {
+  right: 0px;
+}
+.phones {
+  width: 180px;
+  height: 355px;
+  top: 35px;
+  position: absolute;
+  background-color: #c3e3e6;
+  overflow: hidden;
+}
+#a .phones {
+  left: 25px;
+}
+#b .phones {
+  right: 25px;
+}
+.phonec img {
+  pointer-events: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.phone {
+  position: absolute;
+  left: 0px;
+  bottom: 45px;
+  padding: 2.5px;
+  width: 175px;
+}
+.header {
+  background-color: #183;
+  width: 170px;
+  height: 35px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  color: white;
+  padding: 15px 15px 5px 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.pcmsg, .npcmsg {
+  display: inline-block;
+  max-width: 140px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2.5px;
+  color: white;
+  clear: both;
+}
+.pcmsg {
+  background-color: #185;
+  float: right;
+  text-align: right;
+}
+.npcmsg {
+  float: left;
+  text-align: left;
+}
+#a .npcmsg {
+  background-color: #224;
+}
+#b .npcmsg {
+  background-color: #422;
+}
+.footer {
+  background-color: #444;
+  width: 176px;
+  height: 40px;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  padding: 2px 12px 12px 12px;
+}
+.rb-arrow, .lb-arrow {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+.rb-arrow {
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #aaa;
+}
+.lb-arrow {
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid #aaa;
+}
+.rb, .lb {
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  bottom: 12px;
+}
+.rb:hover, .lb:hover {
+  background-color: #555;
+}
+.rb:active, .lb:active {
+  background-color: #333;
+}
+.rb {
+  right: 12px;
+}
+.lb {
+  left: 12px;
+}
+.textboxc {
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 35px;
+  display: inline-block;
+  width: 126px;
+  height: 36px;
+  padding: 2px;
+  color: black;
+  overflow: visible;
+}
+.textboxc:hover {
+  color: #555;
+}
+.textboxc:active {
+  color: #222;
+  background-color: #ccc;
+}
+#room1, #room2 {
+  position: absolute;
+  background-color: #222;
+  width: 490px;
+  height: 225px;
+  left: 255px;
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+#room1 {
+  bottom: 360px;
+}
+#room2 {
+  bottom: 118px;
+}
+#title {
+  position: absolute;
+  display: inline-block;
+  z-index: 12;
+  padding: 74px 149px 144px 215px;
+  width: 857px;
+  height: 435px;
+  bottom: -53px;
+  left: -113px;
+  background-image: url('img/title.svg');
+  color: white;
+  text-align: center;
+}
+#title h1 {
+  font-size: 4em;
+  margin-top: 1.5em;
+}
+#startbutton {
+  border-radius: 10px;
+  font-size: 2em;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 36px;
+  background-color: #111;
+}
+#startbutton:hover {
+  background-color: #080808;
+}
+#startbutton:active {
+  background-color: black;
+  color: #bbb;
+}
+#ending, #replay {
+  color: white;
+  text-align: center;
+  margin-top: 2.5em;
+}
+#ending {
+  font-size: 4em;
+}
+#replay {
+  border-radius: 10px;
+  font-size: 2em;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 36px;
+}
+#replay:hover {
+  background-color: #111;
+}
+#replay:active {
+  background-color: #080808;
+  color: #bbb;
+}
+#fade {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1000px;
+  height: 600px;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 32;
+}
