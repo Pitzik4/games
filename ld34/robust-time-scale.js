@@ -9,7 +9,7 @@
   } else {
     oldNow = performance.now;
     oldNowTarget = performance;
-    performance.now = function now() { return getCurrentTime; };
+    performance.now = function now() { return getCurrentTime(); };
   }
   Date.now = function now() { return getCurrentTime() |0; };
   
