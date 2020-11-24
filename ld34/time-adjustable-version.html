@@ -36,6 +36,14 @@
       canvas {
         position: absolute;
       }
+      #scale-indicator {
+        position: absolute;
+        left: 64px;
+        top: 0;
+        font: 64px 'Montserrat', sans-serif;
+        color: white;
+        text-shadow: rgba(0, 0, 0, 0.5) 4px 4px;
+      }
     </style>
     <script type="text/javascript" src="robust-time-scale.js"></script>
   </head>
@@ -48,11 +56,19 @@
         'ArrowUp': 'u',
         'Up': 'u',
         'ArrowDown': 'd',
-        'Down': 'd'
+        'Down': 'd',
+        'W': 'u',
+        'w': 'u',
+        'KeyW': 'u',
+        'S': 'd',
+        's': 'd',
+        'KeyS': 'd'
       };
       var keyCodeWhich = {
         '38': 'u',
-        '40': 'd'
+        '40': 'd',
+        '87': 'u',
+        '83': 'd'
       };
       window.addEventListener('keydown', function(event) {
         var which;
@@ -70,7 +86,20 @@
         if(which === 'u') ++power;
         if(which === 'd') --power;
         
-        setTimeScale(Math.pow(2, power * 0.5));
+        var newTimeScale = Math.pow(2, power * 0.5);
+        setTimeScale(newTimeScale);
+        
+        var scaleIndicator = document.getElementById('scale-indicator');
+        if(scaleIndicator) {
+          scaleIndicator.parentElement.removeChild(scaleIndicator);
+        }
+        scaleIndicator = document.createElement('div');
+        scaleIndicator.setAttribute('id', 'scale-indicator');
+        scaleIndicator.textContent = newTimeScale.toString().slice(0, 4) + 'x';
+        document.body.appendChild(scaleIndicator);
+        setTimeout(function() {
+          document.body.removeChild(scaleIndicator);
+        }, 1500 * newTimeScale);
       }, true);
     })();
     // ]]>
